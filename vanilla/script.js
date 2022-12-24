@@ -26,7 +26,7 @@ function speak(text) {
     var msg = new SpeechSynthesisUtterance();
     msg.text = text;
     msg.pitch = 1;
-    msg.rate = 1.8;
+    msg.rate = 1.2;
      window.speechSynthesis.speak(msg);
    }
 }
@@ -43,7 +43,7 @@ function typeText(element, text) {
           clearInterval(interval)
         }
         
-    }, 45)
+    }, 36)
 }
 
 // generate unique ID for each message div of bot
