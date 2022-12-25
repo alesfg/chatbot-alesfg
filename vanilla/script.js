@@ -36,9 +36,11 @@ function typeText(element, text) {
 
     let interval = setInterval(() => {
         if (index < text.length) {
+            index == 6 && speak(text)
             element.innerHTML += text.charAt(index)
-            index++
-            index == 12 && speak(text)
+            index++;
+            if(index % 21 == 0) chatContainer.scrollTop = chatContainer.scrollHeight;
+
         } else {
           clearInterval(interval)
         }
